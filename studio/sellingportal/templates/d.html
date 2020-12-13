@@ -1,0 +1,12 @@
+<html>
+	{% for i in d%}
+	<p>{{i.student_degree}}</p>
+	{%endfor%}
+
+	<form action="" method="post">
+    {% csrf_token %}
+    {{ data.as_p }}
+    <input type="submit" value="Submit">
+    	<h1>{{msg}}</h1>
+</form>
+</html>

@@ -1,0 +1,6 @@
+<html>
+{% for i in students%}
+<td>{{i.id}}</td>
+<td><a href="/degree/{{i.id}}">{{i.first_name}}</td></a>
+{%endfor%}
+</html>
